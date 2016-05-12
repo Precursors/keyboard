@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>number keyboard</title>
+    <link rel="stylesheet" href="../dist/css/all.css">
+    <style media="screen">
+      body {
+        text-align: center;
+      }
+      #example {
+        margin-top: 100px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="example" />
+    <script type="text/javascript" src="../dist/js/all.js"></script>
+    <script type="text/javascript">
+      ;
+      (function () {
+        var $input = document.getElementById('example');
+
+        Keyboard.huntNumber($input);
+      })();
+    </script>
+  </body>
+</html>
